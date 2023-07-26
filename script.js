@@ -150,15 +150,16 @@ function fillArray(id) {
                 count++;
         }
         if (count == 3) { won = true; }
-        count = 0;
-        let j = 2;
-        for (let i = 0; i < 3; i++) {
-            if (arr[i][j] === fill)
-                count++;
-            j--;
-        }
-        if (count == 3) { won = true; }
+       
     }
+    count = 0;
+    let j = 2;
+    for (let i = 0; i < 3; i++) {
+        if (arr[i][j] === fill)
+            count++;
+        j--;
+    }
+    if (count == 3) { won = true; }
 
 
     if (won) {
